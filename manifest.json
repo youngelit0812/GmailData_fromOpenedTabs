@@ -1,0 +1,18 @@
+{
+  "name": "Gmail.js",
+  "version": "0.1",
+  "description": "Hello World Gmail chrome extension",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*", "http://mail.google.com/*", "https://www.google.com/*", "http://www.google.com/*", "https://inbox.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.10.2.min.js",
+    "gmail.js",
+    "main.js"
+  ],
+  "manifest_version": 2
+}
